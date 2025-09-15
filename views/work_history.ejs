@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include('partials/styles'); %>
+</head>
+
+<body>
+  <%- include('partials/header'); %>
+    <div class="p-3">
+      <h2 class="p-4">Work History</h2>
+      <div class="timeline">
+        <div class="timeline-container left">
+          <div class="content">
+            <div id="title">
+              <h4>Junior Web Developer</h4>
+              <h5>Nine by Six, Remote</h5>
+              <h5>September 2024 - Present</h5>
+            </div>
+            <ul>
+              <li>
+                Contribute to the design, development, and maintenance of dynamic web applications and websites
+              </li>
+              <li>
+                Develop clean, efficient, and well-documented code using HTML, CSS, and JavaScript, ensuring
+                responsiveness and functionality
+              </li>
+              <li>
+                Collaborate with senior developers to troubleshoot and implement features aligned with performance and
+                functional requirements
+              </li>
+              <li>
+                Participate in code reviews to enhance code quality and provide constructive feedback to peers
+              </li>
+              <li>
+                Identify, debug, and resolve user-reported and testing-found issues
+              </li>
+              <li>
+                Assist with integrating third-party APIs and services into applications
+              </li>
+              <li>
+                Stay updated on industry trends and technologies to enhance skill set and project outcomes
+              </li>
+              <li>
+                Utilize Git for version control and collaborate effectively within a team environment
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-container right">
+          <div class="content">
+            <div id="title">
+              <h4>Web Developer</h4>
+              <h5>Wildcard Corp., Stevens Point, WI</h5>
+              <h5>June 2022 - October 2024</h5>
+            </div>
+            <ul>
+              <li>
+                Provide programming solutions and time-sensitive support for enterprise-level and major customers
+              </li>
+              <li>
+                Collaborate with project managers, programmers, systems developers, and web designers throughout the
+                website development process
+              </li>
+              <li>
+                Resolve complex technical design issues and conduct root cause analysis of system problems
+              </li>
+              <li>
+                Offer input and advice on company projects
+              </li>
+              <li>
+                Code, test, debug, and document software procedures and testing
+              </li>
+              <li>
+                Design new software, develop prototypes, and experiment with new applications; modify, expand, and
+                update existing applications
+              </li>
+              <li>
+                Research the latest news and techniques in software design and development
+              </li>
+              <li>
+                Plan and implement new software solutions across diverse platforms and frameworks
+              </li>
+              <li>
+                Mentor interns with weekly check-ins to address questions and blockers
+              </li>
+              <li>
+                Delegate tasks to ensure continued project development
+              </li>
+              <li>
+                Review pull requests and provide suggestions for improving code efficiency
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-container left">
+          <div class="content">
+            <div id="title">
+              <h4>Web Development Intern</h4>
+              <h5>Wildcard Corp., Stevens Point, WI</h5>
+              <h5>January 2022 - June 2022</h5>
+            </div>
+            <ul>
+              <li>
+                Write reusable, testable, and efficient code
+              </li>
+              <li>
+                Construct, test, and develop custom web applications for client and corporate use
+              </li>
+              <li>
+                Diagnose and fix programming issues and bugs
+              </li>
+              <li>
+                Learn and utilize open-source tools for websites
+              </li>
+              <li>
+                Contribute effectively as a member of an agile development team
+              </li>
+              <li>
+                Develop and expand programming language knowledge and skills
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-container right">
+          <div class="content">
+            <div id="title">
+              <h4>UWSP Center for Land Use Education</h4>
+              <h5>Student Web/Game Developer, Stevens Point, WI</h5>
+              <h5>September 2021 - January 2022</h5>
+            </div>
+            <ul>
+              <li>
+                Converted a physical board game to an online platform using Construct 3
+              </li>
+              <li>
+                Provided regular updates to the development team and ensuring project milestones were met on time
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-container left">
+          <div class="content">
+            <div id="title">
+              <h4>UWSP Center for Land Use Education</h4>
+              <h5>Student Web/Game Developer, Stevens Point, WI</h5>
+              <h5>September 2021 - January 2022</h5>
+            </div>
+            <ul>
+              <li>
+                Managed and updated the WIPPS website, including maintaining event pages, coordinating updates, and ensuring that the website effectively supported organizational activities
+              </li>
+              <li>
+                Oversaw database management and facilitated the technology needs of the staff
+              </li>
+              <li>
+                Contributed to the smooth operation of conferences and other events
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); %>
+</body>
+
+<style>
+  #title {
+    h4 {
+      text-transform: uppercase;
+    }
+
+    h5 {
+      font-style: italic;
+    }
+  }
+
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  /* Container around content */
+  .timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  /* The circles on the timeline */
+  .timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: black;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .timeline-container:nth-child(1n)::after {
+    border: 4px solid magenta;
+  }
+  .timeline-container:nth-child(2n)::after {
+    border: 4px solid yellow;
+  }
+  .timeline-container:nth-child(3n)::after {
+    border: 4px solid lime;
+  }
+  .timeline-container:nth-child(4n)::after {
+    border: 4px solid blue;
+  }
+  .timeline-container:nth-child(5n)::after {
+    border: 4px solid BlueViolet;
+  }
+
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -13px;
+  }
+
+  .content {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .timeline-container {
+      width: 100%;
+    }
+
+    .timeline-container::after {
+      left: -13px;
+    }
+
+    .timeline::after {
+      left: 5%;
+    }
+
+    /* Place both container to the left */
+    .left, .right {
+      left: 5%;
+    }
+
+    /* Add arrows to the left container (pointing right) */
+    .left::before, .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    /* Fix the circle for containers on the right side */
+    .right::after {
+      left: -13px;
+    }
+  }
+
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+
+    /* Full-width containers */
+    .timeline-container {
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+      left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+</style>
+
+</html>

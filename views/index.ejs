@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/styles'); %>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+
+<body>
+  <%- include('partials/header'); %>
+
+  <div class="row pt-4 pb-2 justify-content-center">
+    <div class="col-3 d-flex align-items-start">
+      <div class="d-flex justify-content-end">
+        <img class="h-auto w-50 header-accent" src="../images/accent-left.png"/>
+      </div>
+    </div>
+    <div id="accent-border" class="col-6 mt-5 mb-5">
+        <h1 class="text-center align-self-end">Katie Wiessfelt</h1>
+        <hr class="thick-hr" />
+        <h2 class="text-center p-0 w-100">Web Developer</h2>
+        <hr class="thick-hr" />
+    </div>
+    <div class="col-3 d-flex align-items-end">
+      <div>
+        <img class="h-auto w-50 header-accent" src="../images/accent-right.png"/>
+      </div>
+    </div>
+  </div>
+  <div id="main" class="row justify-content-center">
+    <div id="skills">
+      <div class="skill-box">
+        <img src="/images/fullstack.png" />
+        <h3>Full stack versatility, frontend finesse</h3>
+        <h4>Building performant, user-centered applications with JavaScript, React, Node.js, PHP, and SQL-based backends.
+        </h4>
+      </div>
+      <div class="skill-box">
+        <img src="/images/collaboration.png" />
+        <h3>Collaborative and cross-functional</h3>
+        <h4>Experienced working with designers, PMs, and backend teams to ship production-ready features from concept to
+          deployment.</h4>
+      </div>
+      <div class="skill-box">
+        <img src="/images/database.png" />
+        <h3>Database-driven development</h3>
+        <h4>Confident structuring relational databases, writing complex queries, and ensuring data integrity in live
+          applications.</h4>
+      </div>
+    </div>
+    <div id="actions" class="image-wrapper">
+      <img src="/images/actions-background.png" alt="background image" />
+      <div class="overlay">
+        <div>
+          <button type="button" class="btn btn-actions">
+            <h3>Portfolio</h3>
+          </button>
+          <button type="button" class="btn btn-actions">
+            <h3>Certifications</h3>
+          </button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-actions">
+            <h3>Experience</h3>
+          </button>
+          <button type="button" class="btn btn-actions">
+            <h3>About</h3>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="actions-mobile" class="flex-column align-items-center">
+      <button type="button" class="btn btn-actions">
+        <h3>Portfolio</h3>
+      </button>
+      <button type="button" class="btn btn-actions">
+        <h3>Certifications</h3>
+      </button>
+      <button type="button" class="btn btn-actions">
+        <h3>Experience</h3>
+      </button>
+      <button type="button" class="btn btn-actions">
+        <h3>About</h3>
+      </button>
+    </div>
+  </div>
+
+  <%- include('partials/footer'); %>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+:root {
+  --orange: #ff7700;
+  --yellow: #fff500;
+  --green: #00ff26;
+  --cyan: #00ffff;
+  --blue: #0500ff;
+  --magenta: #ff00f5;
+  --purple: #7000ff;
+  --white: white;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: black;
+  color: white;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Italic";
+  src: url("/fonts/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+h5, li, p {
+  font-size: 24px;
+}
+
+p {
+  font-weight: normal;
+}
