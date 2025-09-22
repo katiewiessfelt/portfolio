@@ -22,17 +22,21 @@ app.get('/about', (req, res) => {
   res.render('about', { title: 'About Us' });
 });
 
-// experience
 app.get('/work-history', (req, res) => {
   res.render('work_history', { title: 'Work History' });
 });
 
+// -- projects
 app.get('/projects', (req, res) => {
   res.render('projects', { title: 'Work History' });
 });
 
 app.get('/projects/TIBI', (req, res) => {
-  res.render('TIBI', { title: 'TIBI' });
+  res.render('projects/TIBI', { title: 'TIBI' });
+});
+
+app.get('/projects/bed-and-biscuits', (req, res) => {
+  res.render('projects/bed&biscuits', { title: 'Bed and Biscuits' });
 });
 
 // Start the server
