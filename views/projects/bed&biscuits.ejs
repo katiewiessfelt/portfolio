@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include('../partials/styles'); %>
+</head>
+
+<body>
+  <%- include('../partials/header'); %>
+    <div class="p-5">
+      <h2>TIBI</h2>
+      <h5>Wireframes created in Figma</h5>
+    </div>
+    <div class="d-flex justify-content-around mb-5">
+      <div id="carouselWireframes" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/projects/b&b/moodBoard.png" class="d-block w-100" alt="moodBoard.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mood Board</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/projects/b&b/home.png" class="d-block w-100" alt="home.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Home Page</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/projects/b&b/bakery.png" class="d-block w-100" alt="bakery.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bakery</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/projects/b&b/menuDisplay.png" class="d-block w-100" alt="menuDisplay.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Menu Display</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/projects/b&b/boarding.png" class="d-block w-100" alt="boarding.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Boarding</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/projects/b&b/boardingMemberPage.png" class="d-block w-100" alt="boardingMemberPage.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Boarding Member Page</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/projects/b&b/about.png" class="d-block w-100" alt="about.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>About Page</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselWireframes" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselWireframes" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <%- include('../partials/footer'); %>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="/js/bootstrap.bundle.min.js"></script>
+      <script type="module">
+        $(document).on('click', 'img', function() {
+          window.open(this.src);
+        })
+      </script>
+</body>
+
+<style>
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    right: unset;
+    left: unset;
+  }
+
+  .carousel {
+    max-width: 50%;
+  }
+
+  .carousel-inner {
+    border-radius: 2em;
+  }
+
+  .carousel-item > img {
+    cursor: pointer;
+  }
+</style>
+
+</html>
