@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include('partials/styles'); %>
+</head>
+
+<body>
+  <%- include('partials/header'); %>
+    <div class="p-5">
+      <h2>Projects</h2>
+      <h4>Wireframing, Coding</h4>
+      <div id="projects" class="row">
+        <!-- Castle CMS -->
+        <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+          <div class="card">
+            <div class="d-flex justify-content-around image-container">
+              <img src="/images/logos/CastleCMS.png" class="card-img-top" alt="Castle CMS">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Castle CMS</h5>
+              <div class="card-text">
+                <div class="snippet">Contributed to github repo</div>
+                <div class="description">
+                  <a href="https://castlecms.io">https://castlecms.io</a>
+                </div>
+                <div class="pt-2 d-flex flex-row-reverse align-self-end">
+                  <small class="show-more">Show More</small>
+                </div>
+              </div>
+            </div>
+            <ul class="description list-group list-group-flush">
+              <li class="list-group-item"><a href="https://github.com/castlecms/castle.cms/pull/553">sha256</a></li>
+              <li class="list-group-item"><a href="https://github.com/castlecms/castle.cms/pull/554">Fix celery</a></li>
+              <li class="list-group-item"><a href="https://github.com/castlecms/castle.cms/pull/572">Dynamic form</a></li>
+              <li class="list-group-item"><a href="https://github.com/castlecms/castle.cms/pull/580">Open AI</a></li>
+              <li class="list-group-item"><a href="https://github.com/castlecms/castle.cms/pull/583">Fix upload file form</a></li>
+              <li class="list-group-item"><a href="https://github.com/castlecms/castle.cms/pull/612">Query Listing</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- TIBI -->
+        <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+          <div class="card">
+            <div class="d-flex justify-content-around image-container">
+              <img src="/images/logos/TIBI.png" class="card-img-top" alt="TIBI">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">TIBI</h5>
+              <div class="card-text">
+                <div class="snippet">
+                  Booking website, specifically for a salon
+                </div>
+                <div class="description">
+                  Wireframes themes created in Figma
+                </div>
+                <div class="pt-2 d-flex flex-row-reverse align-self-end">
+                  <small class="show-more">Show More</small>
+                </div>
+              </div>
+            </div>
+            <ul class="description list-group list-group-flush">
+              <li class="list-group-item"><a href="/projects/TIBI">Wireframes</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Portfolio -->
+        <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+          <div class="card">
+            <div class="d-flex justify-content-around image-container">
+              <img src="/images/logos/katieWiessfelt.png" class="card-img-top" alt="Skill Demonstrations">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Skill Demonstrations</h5>
+              <div class="card-text">
+                <div class="snippet">
+                  
+                </div>
+                <div class="description">
+                  
+                </div>
+                <div class="pt-2 d-flex flex-row-reverse align-self-end">
+                  <small class="show-more">Show More</small>
+                </div>
+              </div>
+            </div>
+            <ul class="description list-group list-group-flush">
+              <li class="list-group-item">Bed and Biscuits <small><a href="https://github.com/katiewiessfelt/bed-and-biscuits">Github</a> | <a href="https://katiewiessfelt.github.io/bed-and-biscuits/">Site</a></small></li>
+              <li class="list-group-item">Portfolio <small><a href="https://github.com/katiewiessfelt/portfolio">Github</a> | <a href="#">Site</a></small></li>
+              <li class="list-group-item"><a href="https://github.com/katiewiessfelt/kattis">Kattis</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); %>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+      $('.description').hide()
+      $(document).on('click', '.show-more', function() {
+        const card = $(this).closest('.card');
+        $(card).find('.snippet').hide();
+        $(card).find('.description').show();
+        $(this).text('Show Less');
+        $(this).addClass('show-less');
+        $(this).removeClass('show-more');
+      })
+      $(document).on('click', '.show-less', function() {
+        const card = $(this).closest('.card');
+        $(card).find('.description').hide();
+        $(card).find('.snippet').show();
+        $(this).text('Show More');
+        $(this).addClass('show-more');
+        $(this).removeClass('show-less');
+      })
+    </script>
+</body>
+
+<style>
+  .list-group-item {
+    background-color: unset;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .card {
+    color: black;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+  }
+
+  .show-more, .show-less {
+    cursor: pointer;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .image-container {
+    height: 10em;
+  }
+
+  .card-img-top {
+    width: auto;
+    max-height: 100%;
+    max-width: 80%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: var(--bs-card-inner-border-radius)
+  }
+
+  .snippet, .description {
+    font-size: 20px;
+    height: 7em;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: .5em;
+  }
+
+  li {
+    font-size: 20px;
+  }
+
+  @media (max-width: 1024px) and (min-width: 641px) {
+    .card-title {
+      height: 2em;
+      padding-bottom: 2.25em;
+    }
+  }
+
+  #projects > div:nth-child(1n) > .card{
+    background-color: magenta;
+  }
+  #projects > div:nth-child(2n) > .card{
+    background-color: yellow;
+  }
+  #projects > div:nth-child(3n) > .card{
+    background-color: lime;
+  }
+  #projects > div:nth-child(4n) > .card{
+    background-color: blue;
+  }
+  #projects > div:nth-child(5n) > .card{
+    background-color: BlueViolet;
+  }
+</style>
+
+</html>
