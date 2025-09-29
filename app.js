@@ -15,11 +15,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Home Page' });
+  res.render('home', { title: 'Home Page' });
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', { title: 'About Us' });
+  res.render('about', { title: 'About Me' });
 });
 
 app.get('/work-history', (req, res) => {
@@ -28,7 +28,7 @@ app.get('/work-history', (req, res) => {
 
 // -- projects
 app.get('/projects', (req, res) => {
-  res.render('projects', { title: 'Work History' });
+  res.render('projects', { title: 'Projects' });
 });
 
 app.get('/projects/TIBI', (req, res) => {
@@ -37,6 +37,10 @@ app.get('/projects/TIBI', (req, res) => {
 
 app.get('/projects/bed-and-biscuits', (req, res) => {
   res.render('projects/bed&biscuits', { title: 'Bed and Biscuits' });
+});
+
+app.get('/projects/portfolio', (req, res) => {
+  res.render('projects/portfolio', { title: 'Katie Wiessfelt' });
 });
 
 // Start the server
