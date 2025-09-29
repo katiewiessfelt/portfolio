@@ -1,23 +1,19 @@
 :root {
   --orange: #ff7700;
-  --yellow: #fff500;
-  --green: #00ff26;
-  --cyan: #00ffff;
-  --blue: #0500ff;
-  --magenta: #ff00f5;
-  --purple: #7000ff;
+  --yellow: yellow;
+  --green: lime;
+  --cyan: cyan;
+  --blue: blue;
+  --magenta: magenta;
+  --purple: BlueViolet;
   --white: white;
+  --black: black;
 }
 
 body {
   font-family: "Inter", sans-serif;
-  background: black;
+  background: var(--black);
   color: white;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
 }
 
 /* fonts */
