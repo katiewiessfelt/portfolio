@@ -11,12 +11,48 @@
 
 <body>
   <%- include('partials/header'); %>
-
-  <h1>About Us</h1>
-  <p>This is the about page.</p>
-  <a href="/">Back Home</a>
+  <div class="row p-5">
+    <div class="about-images p-5 d-flex justify-content-around">
+      <img style="max-width: 500px;" src="/images/about.png" />
+    </div>
+    <div class="about-blurb">
+      <h1>About Me</h1>
+      <p>
+        Hi, I'm Katie! I'm a software developer who loves problem-solving and creating clean, user-friendly websites and
+        applications. I've worked with technologies like Python, PHP, JavaScript, HTML, CSS, and Docker, and I enjoy
+        learning new tools and finding better ways to bring ideas to life online.
+      </p>
+      <p>Outside of coding, I'm usually hanging out with my husband and our two dogs or working on one of my many craft
+        projects — crochet is my favorite. I love being creative, whether that's making something by hand or building a
+        beautiful website that not only looks great but also fulfills a function people really need.
+      </p>
+    </div>
+  </div>
 
   <%- include('partials/footer'); %>
 </body>
+
+<style>
+  @media (min-width: 1537px) {
+    .about-images {
+      width: 41.66666667%;
+      height: 400px;
+    }
+
+    .about-blurb {
+      width: 58.3333333%
+    }
+  }
+
+  @media (max-width: 1536px) {
+    .about-images {
+      height: 500px;
+    }
+
+    .about-blurb, .about-images {
+      width: 100%;
+    }
+  }
+</style>
 
 </html>

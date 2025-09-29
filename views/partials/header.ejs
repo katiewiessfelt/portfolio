@@ -1,4 +1,4 @@
-<div id="header" class="row">
+<!-- <div id="header" class="row">
     <div class="d-flex flex-row-reverse">
         <i class="fa-solid fa-bars fa-3x"></i>
     </div>
@@ -17,4 +17,151 @@
   margin-bottom: 1em;
 }
 
+</style> -->
+
+<div id="header" class="row">
+  <div class="d-flex flex-row justify-content-around my-3">
+    <div class="btn-group">
+      <button name="home" type="button" class="btn">
+        HOME
+      </button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        PROJECTS
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/projects">PROJECTS</a></li>
+        <li>
+          <span class="dropdown-item">Bed and Biscuits</span>
+          <small>
+            <ul>
+              <li><a class="dropdown-item" href="/projects/bed-and-biscuits">Wireframes</a></li>
+              <li><a class="dropdown-item" href="https://github.com/katiewiessfelt/bed-and-biscuits">Github</a></li>
+              <li><a class="dropdown-item" href="https://katiewiessfelt.github.io/bed-and-biscuits/">Site</a>
+          </small>
+        </li>
+      </ul></small>
+      </li>
+      <li>
+        <span class="dropdown-item">Portfolio</span>
+        <small>
+          <ul>
+            <li><a class="dropdown-item" href="/projects/portfolio">Wireframes</a></li>
+            <li><a class="dropdown-item" href="https://github.com/katiewiessfelt/portfolio">Github</a></li>
+            <li><a class="dropdown-item" href="/">Site</a>
+        </small>
+      </li>
+      </ul></small>
+      <li><a class="dropdown-item" href="https://github.com/katiewiessfelt/kattis">Kattis</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button name="experience" type="button" class="btn">
+        WORK HISTORY
+      </button>
+    </div>
+    <div class="btn-group">
+      <button name="about" type="button" class="btn">
+        ABOUT
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script>
+  $(document).on('click', 'button[name=home]', function() {
+    window.location = '/'
+  })
+
+  $(document).on('click', 'button[name=experience]', function() {
+    window.location = '/work-history'
+  })
+
+  $(document).on('click', 'button[name=about]', function() {
+    window.location = '/about'
+  })
+</script>
+<style>
+  #header {
+    margin-bottom: 1em;
+    background: rgba(255, 0, 245, .25);
+    border-bottom: 2px solid var(--magenta);
+  }
+
+  .dropdown-menu {
+    background-color: var(--black);
+    color: var(--white);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+  }
+
+  .btn {
+    color: var(--white);
+    font-size: 1.5em;
+  }
+
+  #header .btn:hover,
+  #header .btn.show {
+    color: var(--black);
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  #header .dropdown-item {
+    color: var(--white);
+  }
+
+  #header .dropdown-item:hover {
+    background-color: unset;
+  }
+
+  /* header buttons */
+  .btn-group:nth-child(1n)>.btn:hover,
+  .btn-group:nth-child(1n)>.btn.show {
+    background-color: var(--magenta);
+  }
+
+  .btn-group:nth-child(1n) a:hover {
+    color: var(--magenta) !important;
+  }
+
+  .btn-group:nth-child(2n)>.btn:hover,
+  .btn-group:nth-child(2n)>.btn.show {
+    background-color: var(--yellow);
+  }
+
+  .btn-group:nth-child(2n) a:hover {
+    color: var(--yellow) !important;
+  }
+
+  .btn-group:nth-child(3n)>.btn:hover,
+  .btn-group:nth-child(3n)>.btn.show {
+    background-color: var(--green);
+  }
+
+  .btn-group:nth-child(3n) a:hover {
+    color: var(--green) !important;
+  }
+
+  .btn-group:nth-child(4n)>.btn:hover,
+  .btn-group:nth-child(4n)>.btn.show {
+    background-color: var(--blue);
+  }
+
+  .btn-group:nth-child(4n) a:hover {
+    color: var(--blue) !important;
+  }
+
+  .btn-group:nth-child(5n)>.btn:hover,
+  .btn-group:nth-child(5n)>.btn.show {
+    background-color: var(--purple);
+  }
+
+  .btn-group:nth-child(5n) a:hover {
+    color: var(--purple) !important;
+  }
 </style>
