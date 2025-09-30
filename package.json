@@ -4,19 +4,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "sass": "sass --watch public/scss:public/css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.1",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
     "ejs": "^3.1.10",
     "express": "^5.1.0"
   },
   "description": "",
   "devDependencies": {
-    "bootstrap": "^5.3.8",
-    "gh-pages": "^6.3.0"
+    "sass": "^1.93.2"
   }
 }
