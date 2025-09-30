@@ -1,0 +1,20 @@
+#about {
+    > .about-images {
+        width: 100%;
+        @media (min-width: 1537px) {
+            width: 41.66666667%;
+        }
+        @media (max-width: 1536px) {
+            height: 500px;
+            width: 100%;
+        }
+    }
+    > .about-blurb {
+        @media (min-width: 1537px) {
+            width: 58.33333333%;
+        }
+        @media (max-width: 1536px) {
+            width: 100%;
+        }
+    }
+}

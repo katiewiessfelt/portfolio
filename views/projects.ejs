@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>
-    <%= title %>
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%- include('partials/styles'); %>
-</head>
+  <%- include('partials/head'); %>
 
 <body>
   <%- include('partials/header'); %>
@@ -117,8 +110,6 @@
     </div>
 
     <%- include('partials/footer'); %>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
     <script type="module">
       $('.description').hide()
       $(document).on('click', '.show-more', function() {
@@ -140,76 +131,6 @@
     </script>
 </body>
 
-<style>
-  .list-group-item {
-    background-color: unset;
-  }
-
-  a {
-    color: var(--black);
-  }
-
-  .card {
-    color: var(--black);
-    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
-  }
-
-  .show-more, .show-less {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-
-  .description {
-    display: none;
-  }
-
-  .image-container {
-    height: 10em;
-  }
-
-  .card-img-top {
-    width: auto;
-    max-height: 100%;
-    max-width: 80%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-radius: var(--bs-card-inner-border-radius)
-  }
-
-  .snippet, .description {
-    font-size: 20px;
-    height: 7em;
-    overflow-y: scroll;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: .5em;
-  }
-
-  li {
-    font-size: 20px;
-  }
-
-  @media (max-width: 1024px) and (min-width: 641px) {
-    .card-title {
-      height: 2em;
-      padding-bottom: 2.25em;
-    }
-  }
-
-  #projects > div:nth-child(1n) > .card{
-    background-color: var(--magenta);
-  }
-  #projects > div:nth-child(2n) > .card{
-    background-color: var(--yellow);
-  }
-  #projects > div:nth-child(3n) > .card{
-    background-color: var(--green);
-  }
-  #projects > div:nth-child(4n) > .card{
-    background-color: var(--blue);
-  }
-  #projects > div:nth-child(5n) > .card{
-    background-color: var(--purple);
-  }
-</style>
+<link rel="stylesheet" href="/css/projects.css">
 
 </html>

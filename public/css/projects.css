@@ -1,0 +1,121 @@
+#projects > div:nth-child(1n) > .card {
+  background-color: var(--magenta);
+}
+#projects > div:nth-child(2n) > .card {
+  background-color: var(--yellow);
+}
+#projects > div:nth-child(3n) > .card {
+  background-color: var(--green);
+}
+#projects > div:nth-child(4n) > .card {
+  background-color: var(--blue);
+}
+#projects > div:nth-child(5n) > .card {
+  background-color: var(--purple);
+}
+#projects li {
+  font-size: 20px;
+}
+#projects a {
+  color: var(--black);
+}
+#projects .list-group-item {
+  background-color: unset;
+}
+#projects .card {
+  color: var(--black);
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+}
+#projects .show-more,
+#projects .show-less {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#projects .description {
+  display: none;
+}
+#projects .image-container {
+  height: 10em;
+}
+#projects .card-img-top {
+  width: auto;
+  max-height: 100%;
+  max-width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: var(--bs-card-inner-border-radius);
+}
+#projects .snippet,
+#projects .description {
+  font-size: 20px;
+  height: 7em;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
+}
+@media (max-width: 1024px) and (min-width: 641px) {
+  #projects .card-title {
+    height: 2em;
+    padding-bottom: 2.25em;
+  }
+}
+
+#portfolio .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  right: unset;
+  left: unset;
+}
+#portfolio .carousel {
+  width: 30%;
+}
+@media (max-width: 1024px) and (min-width: 641px) {
+  #portfolio .carousel {
+    /* large screen */
+    width: 50%;
+  }
+}
+@media (max-width: 640px) {
+  #portfolio .carousel {
+    /* small screen */
+    width: 100%;
+  }
+}
+#portfolio .carousel-inner {
+  border-radius: 2em;
+  width: 100%;
+  border: 1px solid white;
+}
+#portfolio .carousel-item > img {
+  cursor: pointer;
+}
+
+#bnb .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  right: unset;
+  left: unset;
+}
+#bnb .carousel {
+  max-width: 50%;
+}
+#bnb .carousel-inner {
+  border-radius: 2em;
+  border: 1px solid white;
+}
+#bnb .carousel-inner > img {
+  cursor: pointer;
+}
+
+#tibi .carousel {
+  max-width: 50%;
+}
+#tibi .carousel-inner {
+  border-radius: 2em;
+  border: 1px solid white;
+}
+#tibi .carousel-item > img {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=projects.css.map */

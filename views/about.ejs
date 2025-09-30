@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>
-    <%= title %>
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%- include('partials/styles'); %>
-</head>
+<%- include('partials/head'); %>
 
 <body>
   <%- include('partials/header'); %>
-  <div class="row p-5">
+  <div class="row p-5 d-flex" id="about">
     <div class="about-images p-5 d-flex justify-content-around">
       <img style="max-width: 500px;" src="/images/about.png" />
     </div>
@@ -32,27 +26,6 @@
   <%- include('partials/footer'); %>
 </body>
 
-<style>
-  @media (min-width: 1537px) {
-    .about-images {
-      width: 41.66666667%;
-      height: 400px;
-    }
-
-    .about-blurb {
-      width: 58.3333333%
-    }
-  }
-
-  @media (max-width: 1536px) {
-    .about-images {
-      height: 500px;
-    }
-
-    .about-blurb, .about-images {
-      width: 100%;
-    }
-  }
-</style>
+<link rel="stylesheet" href="/css/about.css" />
 
 </html>

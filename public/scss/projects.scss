@@ -1,0 +1,143 @@
+#projects {
+  > div:nth-child(1n) > .card {
+    background-color: var(--magenta);
+  }
+  > div:nth-child(2n) > .card {
+    background-color: var(--yellow);
+  }
+  > div:nth-child(3n) > .card {
+    background-color: var(--green);
+  }
+  > div:nth-child(4n) > .card {
+    background-color: var(--blue);
+  }
+  > div:nth-child(5n) > .card {
+    background-color: var(--purple);
+  }
+
+  li {
+    font-size: 20px;
+  }
+
+  a {
+    color: var(--black);
+  }
+
+  .list-group-item {
+    background-color: unset;
+  }
+
+  .card {
+    color: var(--black);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+  }
+
+  .show-more,
+  .show-less {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .image-container {
+    height: 10em;
+  }
+
+  .card-img-top {
+    width: auto;
+    max-height: 100%;
+    max-width: 80%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: var(--bs-card-inner-border-radius);
+  }
+
+  .snippet,
+  .description {
+    font-size: 20px;
+    height: 7em;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
+  }
+
+  @media (max-width: 1024px) and (min-width: 641px) {
+    .card-title {
+      height: 2em;
+      padding-bottom: 2.25em;
+    }
+  }
+}
+
+#portfolio {
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    right: unset;
+    left: unset;
+  }
+
+  .carousel {
+    width: 30%;
+
+    @media (max-width: 1024px) and (min-width: 641px) {
+      /* large screen */
+      width: 50%;
+    }
+
+    @media (max-width: 640px) {
+      /* small screen */
+      width: 100%;
+    }
+  }
+
+  .carousel-inner {
+    border-radius: 2em;
+    width: 100%;
+    border: 1px solid white;
+  }
+
+  .carousel-item > img {
+    cursor: pointer;
+  }
+}
+
+#bnb {
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    right: unset;
+    left: unset;
+  }
+
+  .carousel {
+    max-width: 50%;
+  }
+
+  .carousel-inner {
+    border-radius: 2em;
+    border: 1px solid white;
+
+    > img {
+      cursor: pointer;
+    }
+  }
+}
+
+#tibi {
+  .carousel {
+    max-width: 50%;
+  }
+
+  .carousel-inner {
+    border-radius: 2em;
+    border: 1px solid white;
+  }
+
+  .carousel-item > img {
+    cursor: pointer;
+  }
+}

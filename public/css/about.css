@@ -1,0 +1,26 @@
+#about > .about-images {
+  width: 100%;
+}
+@media (min-width: 1537px) {
+  #about > .about-images {
+    width: 41.66666667%;
+  }
+}
+@media (max-width: 1536px) {
+  #about > .about-images {
+    height: 500px;
+    width: 100%;
+  }
+}
+@media (min-width: 1537px) {
+  #about > .about-blurb {
+    width: 58.33333333%;
+  }
+}
+@media (max-width: 1536px) {
+  #about > .about-blurb {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

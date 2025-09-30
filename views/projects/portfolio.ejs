@@ -1,102 +1,64 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>
-    <%= title %>
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%- include('../partials/styles'); %>
-</head>
+<%- include('../partials/head'); %>
 
 <body>
   <%- include('../partials/header'); %>
-    <div class="p-5">
-      <h2>Portfolio</h2>
-      <h5>Wireframes created in Figma</h5>
-    </div>
-    <div class="d-flex justify-content-around mb-5">
-      <div id="carouselWireframes" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div id="portfolio">
+      <div class="p-5">
+        <h2>Portfolio</h2>
+        <h5>Wireframes created in Figma</h5>
+      </div>
+      <div class="d-flex justify-content-around mb-5">
+        <div id="carouselWireframes" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselWireframesCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images/projects/portfolio/Home.png" class="d-block w-100" alt="Home.png">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Home Page</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/images/projects/portfolio/Experience.png" class="d-block w-100" alt="Experience.png">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Experience</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/images/projects/portfolio/Portfolio.png" class="d-block w-100" alt="Porfolio.png">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Portfolio</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselWireframes" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselWireframes" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/images/projects/portfolio/Home.png" class="d-block w-100" alt="Home.png">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Home Page</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/images/projects/portfolio/Experience.png" class="d-block w-100" alt="Experience.png">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Experience</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/images/projects/portfolio/Portfolio.png" class="d-block w-100" alt="Porfolio.png">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Portfolio</h5>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselWireframes" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselWireframes" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
     <%- include('../partials/footer'); %>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="/js/bootstrap.bundle.min.js"></script>
       <script type="module">
-        $(document).on('click', 'img', function() {
+        $(document).on('click', 'img', function () {
           window.open(this.src);
         })
       </script>
 </body>
 
-<style>
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    right: unset;
-    left: unset;
-  }
-
-  .carousel {
-    width: 30%;
-  }
-
-  /* large screen */
-  @media (max-width: 1024px) and (min-width: 641px) {
-    .carousel {
-      width: 50%;
-    }
-  }
-
-  /* small screen */
-  @media (max-width: 640px) {
-    .carousel {
-      width: 100%;
-    }
-  }
-
-  .carousel-inner {
-    border-radius: 2em;
-    width: 100%;
-    border: 1px solid white;
-  }
-
-  .carousel-item > img {
-    cursor: pointer;
-  }
-</style>
+<link rel="stylesheet" href="/css/projects.css">
 
 </html>
