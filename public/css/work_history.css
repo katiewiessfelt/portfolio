@@ -1,0 +1,214 @@
+#work-history #title > h4 {
+  text-transform: uppercase;
+}
+#work-history #title > h5 {
+  font-style: italic;
+}
+#work-history {
+  /* The actual timeline (the vertical ruler) */
+}
+#work-history > .timeline {
+  position: relative;
+  margin: 0 auto;
+  /* The actual timeline (the vertical ruler) */
+}
+#work-history > .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+@media (max-width: 1024px) {
+  #work-history > .timeline::after {
+    left: 5%;
+  }
+}
+#work-history > .timeline::after {
+  /* Place the timelime to the left */
+}
+@media screen and (max-width: 600px) {
+  #work-history > .timeline::after {
+    left: 31px;
+  }
+}
+#work-history {
+  /* Container around content */
+}
+#work-history .timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+#work-history .timeline-container:nth-child(1n)::after {
+  border: 4px solid var(--magenta);
+}
+#work-history .timeline-container:nth-child(2n)::after {
+  border: 4px solid var(--yellow);
+}
+#work-history .timeline-container:nth-child(3n)::after {
+  border: 4px solid var(--green);
+}
+#work-history .timeline-container:nth-child(4n)::after {
+  border: 4px solid var(--blue);
+}
+#work-history .timeline-container:nth-child(5n)::after {
+  border: 4px solid var(--purple);
+}
+@media (max-width: 1024px) {
+  #work-history .timeline-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #work-history .timeline-container {
+    /* Full-width containers */
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #work-history .timeline-container::before {
+    /* Make sure that all arrows are pointing leftwards */
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+}
+#work-history .timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: var(--black);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+@media (max-width: 1024px) {
+  #work-history .timeline-container::after {
+    left: -13px;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: var(--black);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+#work-history .left {
+  /* Place the container to the left */
+  left: 0;
+}
+@media (max-width: 1024px) {
+  #work-history .left {
+    left: 5%;
+  }
+}
+#work-history .left {
+  /* Add arrows to the left container (pointing right) */
+}
+#work-history .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+@media (max-width: 1024px) {
+  #work-history .left::before {
+    /* Add arrows to the container (pointing right) */
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+}
+@media (max-width: 600px) {
+  #work-history .left::after {
+    left: 15px;
+  }
+}
+#work-history .right {
+  /* Place the container to the right */
+  left: 50%;
+  /* Make all right containers behave like the left ones */
+}
+@media (max-width: 1024px) {
+  #work-history .right {
+    left: 5%;
+  }
+}
+@media (max-width: 600px) {
+  #work-history .right {
+    left: 0%;
+  }
+}
+#work-history .right {
+  /* Add arrows to the right container (pointing left) */
+}
+#work-history .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+@media (max-width: 1024px) {
+  #work-history .right::before {
+    /* Add arrows to the container (pointing right) */
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+}
+#work-history .right {
+  /* Fix the circle for containers on the right side */
+}
+#work-history .right::after {
+  left: -13px;
+}
+@media (max-width: 600px) {
+  #work-history .right::after {
+    left: 15px;
+  }
+}
+#work-history .content {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=work_history.css.map */

@@ -1,0 +1,199 @@
+#work-history {
+    #title {
+        > h4 {
+            text-transform: uppercase;
+        }
+        > h5 {
+            font-style: italic;
+        }
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    > .timeline {
+        position: relative;
+        margin: 0 auto;
+        /* The actual timeline (the vertical ruler) */
+        &::after {
+            content: "";
+            position: absolute;
+            width: 6px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+
+            @media (max-width: 1024px) {
+                left: 5%;
+            }
+
+            /* Place the timelime to the left */
+            @media screen and (max-width: 600px) {
+                left: 31px;
+            }
+        }
+    }
+
+    /* Container around content */
+    .timeline-container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+
+        &:nth-child(1n)::after {
+            border: 4px solid var(--magenta);
+        }
+        &:nth-child(2n)::after {
+            border: 4px solid var(--yellow);
+        }
+        &:nth-child(3n)::after {
+            border: 4px solid var(--green);
+        }
+        &:nth-child(4n)::after {
+            border: 4px solid var(--blue);
+        }
+        &:nth-child(5n)::after {
+            border: 4px solid var(--purple);
+        }
+
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* Full-width containers */
+            padding-left: 70px;
+            padding-right: 25px;
+        }
+        &::before {
+            @media screen and (max-width: 600px) {
+                /* Make sure that all arrows are pointing leftwards */
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -13px;
+            background-color: var(--black);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            @media (max-width: 1024px) {
+                left: -13px;
+                content: "";
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                right: -13px;
+                background-color: var(--black);
+                top: 15px;
+                border-radius: 50%;
+                z-index: 1;
+            }
+        }
+    }
+
+    .left {
+        /* Place the container to the left */
+        left: 0;
+
+        @media (max-width: 1024px) {
+            left: 5%;
+        }
+        /* Add arrows to the left container (pointing right) */
+        &::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+
+            @media (max-width: 1024px) {
+                /* Add arrows to the container (pointing right) */
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                left: 30px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+        }
+        &::after {
+            @media (max-width: 600px) {
+                left: 15px;
+            }
+        }
+    }
+
+    .right {
+        /* Place the container to the right */
+        left: 50%;
+
+        /* Make all right containers behave like the left ones */
+        @media (max-width: 1024px) {
+            left: 5%;
+        }
+
+        @media (max-width: 600px) {
+            left: 0%;
+        }
+
+        /* Add arrows to the right container (pointing left) */
+        &::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+
+            @media (max-width: 1024px) {
+                /* Add arrows to the container (pointing right) */
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                left: 30px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+        }
+        /* Fix the circle for containers on the right side */
+        &::after {
+            left: -13px;
+
+            @media (max-width: 600px) {
+                left: 15px;
+            }
+        }
+    }
+
+    .content {
+        padding: 20px 30px;
+        position: relative;
+        border-radius: 6px;
+    }
+}
