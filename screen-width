@@ -1,0 +1,15 @@
+  /* small screen */
+  @media (max-width: 640px) {
+  }
+  /* medium screen */
+  @media (max-width: 768px) and (min-width: 641px) {
+  }
+  /* large screen */
+  @media (max-width: 1024px) and (min-width: 769px) {
+  }
+  /* xl screen */
+  @media (max-width: 1536px) and (min-width: 1025px) {
+  }
+  /* xxl screen */
+  @media (min-width: 1537px) {
+  }
