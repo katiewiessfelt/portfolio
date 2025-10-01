@@ -48,16 +48,6 @@
     .btn-group:nth-child(1n) {
         > .btn:hover,
         > .btn.show {
-            background-color: var(--magenta);
-        }
-        a:hover {
-            color: var(--magenta) !important;
-        }
-    }
-
-    .btn-group:nth-child(2n) {
-        > .btn:hover,
-        > .btn.show {
             background-color: var(--yellow);
         }
         a:hover {
@@ -65,7 +55,7 @@
         }
     }
 
-    .btn-group:nth-child(3n) {
+    .btn-group:nth-child(2n) {
         > .btn:hover,
         > .btn.show {
             background-color: var(--green);
@@ -75,7 +65,7 @@
         }
     }
 
-    .btn-group:nth-child(4n) {
+    .btn-group:nth-child(3n) {
         > .btn:hover,
         > .btn.show {
             background-color: var(--blue);
@@ -85,7 +75,7 @@
         }
     }
 
-    .btn-group:nth-child(5n) {
+    .btn-group:nth-child(4n) {
         > .btn:hover,
         > .btn.show {
             background-color: var(--purple);

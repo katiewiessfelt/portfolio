@@ -41,37 +41,30 @@
 }
 #header .btn-group:nth-child(1n) > .btn:hover,
 #header .btn-group:nth-child(1n) > .btn.show {
-  background-color: var(--magenta);
+  background-color: var(--yellow);
 }
 #header .btn-group:nth-child(1n) a:hover {
-  color: var(--magenta) !important;
+  color: var(--yellow) !important;
 }
 #header .btn-group:nth-child(2n) > .btn:hover,
 #header .btn-group:nth-child(2n) > .btn.show {
-  background-color: var(--yellow);
+  background-color: var(--green);
 }
 #header .btn-group:nth-child(2n) a:hover {
-  color: var(--yellow) !important;
+  color: var(--green) !important;
 }
 #header .btn-group:nth-child(3n) > .btn:hover,
 #header .btn-group:nth-child(3n) > .btn.show {
-  background-color: var(--green);
+  background-color: var(--blue);
 }
 #header .btn-group:nth-child(3n) a:hover {
-  color: var(--green) !important;
+  color: var(--blue) !important;
 }
 #header .btn-group:nth-child(4n) > .btn:hover,
 #header .btn-group:nth-child(4n) > .btn.show {
-  background-color: var(--blue);
-}
-#header .btn-group:nth-child(4n) a:hover {
-  color: var(--blue) !important;
-}
-#header .btn-group:nth-child(5n) > .btn:hover,
-#header .btn-group:nth-child(5n) > .btn.show {
   background-color: var(--purple);
 }
-#header .btn-group:nth-child(5n) a:hover {
+#header .btn-group:nth-child(4n) a:hover {
   color: var(--purple) !important;
 }
 

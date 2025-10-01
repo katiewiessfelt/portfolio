@@ -1,17 +1,18 @@
 #projects > div:nth-child(1n) > .card {
-  background-color: var(--magenta);
+  background-color: rgba(255, 255, 0, 0.8);
+  border: 5px solid var(--yellow);
 }
 #projects > div:nth-child(2n) > .card {
-  background-color: var(--yellow);
+  background-color: rgba(0, 255, 0, 0.8);
+  border: 5px solid var(--green);
 }
 #projects > div:nth-child(3n) > .card {
-  background-color: var(--green);
+  background-color: rgba(0, 255, 255, 0.8);
+  border: 5px solid var(--cyan);
 }
 #projects > div:nth-child(4n) > .card {
-  background-color: var(--blue);
-}
-#projects > div:nth-child(5n) > .card {
-  background-color: var(--purple);
+  background-color: rgba(138, 43, 226, 0.8);
+  border: 5px solid var(--purple);
 }
 #projects li {
   font-size: 20px;

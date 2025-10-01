@@ -1,13 +1,13 @@
 :root {
-  --orange: #ff7700;
-  --yellow: yellow;
-  --green: lime;
-  --cyan: cyan;
-  --blue: blue;
-  --magenta: magenta;
-  --purple: BlueViolet;
-  --white: white;
-  --black: black;
+  --orange: rgb(255, 119, 0);
+  --yellow: rgb(255, 255, 0);
+  --green: rgb(0, 255, 0);
+  --cyan: rgb(0, 255, 255);
+  --blue: rgb(0, 0, 255);
+  --magenta: rgb(255, 0, 255);
+  --purple: rgb(138, 43, 226);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
 }
 
 body {
