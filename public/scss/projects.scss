@@ -72,72 +72,26 @@
   }
 }
 
-#portfolio {
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    right: unset;
-    left: unset;
-  }
+.carousel, .carousel-title {
+  width: 75%;
 
-  .carousel {
-    width: 30%;
-
-    @media (max-width: 1024px) and (min-width: 641px) {
-      /* large screen */
-      width: 50%;
-    }
-
-    @media (max-width: 640px) {
-      /* small screen */
-      width: 100%;
-    }
-  }
-
-  .carousel-inner {
-    border-radius: 2em;
-    width: 100%;
-    border: 1px solid white;
-  }
-
-  .carousel-item > img {
-    cursor: pointer;
+  @media (max-width: 1024px) {
+    width: 80%;
   }
 }
 
-#bnb {
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    right: unset;
-    left: unset;
-  }
-
-  .carousel {
-    max-width: 50%;
-  }
-
-  .carousel-inner {
-    border-radius: 2em;
-    border: 1px solid white;
-
-    > img {
-      cursor: pointer;
-    }
-  }
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  right: unset;
+  left: unset;
 }
 
-#tibi {
-  .carousel {
-    max-width: 50%;
-  }
+.carousel-inner {
+  border-radius: 2em;
+  border: 1px solid white;
+}
 
-  .carousel-inner {
-    border-radius: 2em;
-    border: 1px solid white;
-  }
-
-  .carousel-item > img {
-    cursor: pointer;
-  }
+.carousel-item > img {
+  cursor: pointer;
 }

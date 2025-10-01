@@ -99,7 +99,7 @@
   .image-wrapper {
     position: relative;
     img {
-      width: 100vw;
+      width: 100%;
       height: auto;
       display: block;
     }
@@ -107,7 +107,7 @@
 
   .overlay {
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translateX(-50%);
     color: var(--white);
@@ -121,11 +121,14 @@
       width: 100%;
       @media (max-width: 1024px) and (min-width: 769px) {
         margin-bottom: 3em;
+        > button {
+          margin: 1em;
+        }
       }
     }
 
     @media (max-width: 1024px) and (min-width: 769px) {
-      top: 35%;
+      top: 43%;
       left: 50%;
       flex-direction: column;
     }

@@ -87,13 +87,13 @@
   position: relative;
 }
 #home .image-wrapper img {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: block;
 }
 #home .overlay {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translateX(-50%);
   color: var(--white);
@@ -110,10 +110,13 @@
   #home .overlay > div {
     margin-bottom: 3em;
   }
+  #home .overlay > div > button {
+    margin: 1em;
+  }
 }
 @media (max-width: 1024px) and (min-width: 769px) {
   #home .overlay {
-    top: 35%;
+    top: 43%;
     left: 50%;
     flex-direction: column;
   }
