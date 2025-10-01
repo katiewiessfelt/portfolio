@@ -10,30 +10,55 @@
         PROJECTS
       </button>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="/projects">PROJECTS</a></li>
+        <li><a class="dropdown-item h4" href="/projects">Projects</a></li>
         <li>
-          <span class="dropdown-item">Bed and Biscuits</span>
-          <small>
-            <ul>
-              <li><a class="dropdown-item" href="/projects/bed-and-biscuits">Wireframes</a></li>
-              <li><a class="dropdown-item" href="https://github.com/katiewiessfelt/bed-and-biscuits">Github</a></li>
-              <li><a class="dropdown-item" href="https://katiewiessfelt.github.io/bed-and-biscuits/">Site</a>
-          </small>
+          <hr class="dropdown-divider">
         </li>
-      </ul></small>
-      </li>
-      <li>
-        <span class="dropdown-item">Portfolio</span>
-        <small>
+        <li>
+          <span class="dropdown-item category h4">Castle CMS</span>
           <ul>
-            <li><a class="dropdown-item" href="/projects/portfolio">Wireframes</a></li>
-            <li><a class="dropdown-item" href="https://github.com/katiewiessfelt/portfolio">Github</a></li>
-            <li><a class="dropdown-item" href="/">Site</a>
-        </small>
-      </li>
-      </ul></small>
-      <li><a class="dropdown-item" href="/projects/TIBI">TIBI</a></li>
-      <li><a class="dropdown-item" href="https://github.com/katiewiessfelt/kattis">Kattis</a></li>
+              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/553">SHA256</a></li>
+              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/554">Fix Celery</a></li>
+              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/572">Dynamic Form</a>
+              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/580">Open AI</a>
+              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/583">Fix Upload File
+                  Form</a>
+              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/612">Query Listing</a>
+            </ul>
+        </li>
+        <li>
+          <span class="dropdown-item category h4">TIBI</span>
+          <ul>
+              <li><a class="dropdown-item h6" href="/projects/TIBI">Wireframes</a></li>
+            </ul>
+        </li>
+        <li>
+          <span class="dropdown-item category h4 text-uppercase">Personal Projects</span>
+          <ul>
+            <li>
+              <span class="dropdown-item h5 sub-category">Bed and Biscuits</span>
+              <ul>
+                  <li><a class="dropdown-item h6" href="/projects/bed-and-biscuits">Wireframes</a></li>
+                  <li><a class="dropdown-item h6" href="https://github.com/katiewiessfelt/bed-and-biscuits">Github</a></li>
+                  <li><a class="dropdown-item h6" href="https://katiewiessfelt.github.io/bed-and-biscuits/">Site</a>
+              </ul>
+            </li>
+            <li>
+              <span class="dropdown-item h5 sub-category">Portfolio</span>
+              <ul>
+                  <li><a class="dropdown-item h6" href="/projects/portfolio">Wireframes</a></li>
+                  <li><a class="dropdown-item h6" href="https://github.com/katiewiessfelt/portfolio">Github</a></li>
+                  <li><a class="dropdown-item h6" href="/">Site</a>
+              </ul>
+            </li>
+            <li>
+              <span class="dropdown-item h5 sub-category">Kattis</span>
+              <ul>
+                  <li><a class="dropdown-item h6" href="https://github.com/katiewiessfelt/kattis">Github</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
     <div class="btn-group">
@@ -52,96 +77,17 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script>
-  $(document).on('click', 'button[name=home]', function() {
+  $(document).on('click', 'button[name=home]', function () {
     window.location = '/'
   })
 
-  $(document).on('click', 'button[name=experience]', function() {
+  $(document).on('click', 'button[name=experience]', function () {
     window.location = '/work-history'
   })
 
-  $(document).on('click', 'button[name=about]', function() {
+  $(document).on('click', 'button[name=about]', function () {
     window.location = '/about'
   })
 </script>
-<style>
-  #header {
-    margin-bottom: 1em;
-    background: rgba(255, 0, 245, .25);
-    border-bottom: 2px solid var(--magenta);
-  }
 
-  .dropdown-menu {
-    background-color: var(--black);
-    color: var(--white);
-    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
-  }
-
-  .btn {
-    color: var(--white);
-    font-size: 1.5em;
-  }
-
-  #header .btn:hover,
-  #header .btn.show {
-    color: var(--black);
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  #header .dropdown-item {
-    color: var(--white);
-  }
-
-  #header .dropdown-item:hover {
-    background-color: unset;
-  }
-
-  /* header buttons */
-  .btn-group:nth-child(1n)>.btn:hover,
-  .btn-group:nth-child(1n)>.btn.show {
-    background-color: var(--magenta);
-  }
-
-  .btn-group:nth-child(1n) a:hover {
-    color: var(--magenta) !important;
-  }
-
-  .btn-group:nth-child(2n)>.btn:hover,
-  .btn-group:nth-child(2n)>.btn.show {
-    background-color: var(--yellow);
-  }
-
-  .btn-group:nth-child(2n) a:hover {
-    color: var(--yellow) !important;
-  }
-
-  .btn-group:nth-child(3n)>.btn:hover,
-  .btn-group:nth-child(3n)>.btn.show {
-    background-color: var(--green);
-  }
-
-  .btn-group:nth-child(3n) a:hover {
-    color: var(--green) !important;
-  }
-
-  .btn-group:nth-child(4n)>.btn:hover,
-  .btn-group:nth-child(4n)>.btn.show {
-    background-color: var(--blue);
-  }
-
-  .btn-group:nth-child(4n) a:hover {
-    color: var(--blue) !important;
-  }
-
-  .btn-group:nth-child(5n)>.btn:hover,
-  .btn-group:nth-child(5n)>.btn.show {
-    background-color: var(--purple);
-  }
-
-  .btn-group:nth-child(5n) a:hover {
-    color: var(--purple) !important;
-  }
-</style>
+<link rel="stylesheet" href="/css/header.css">
