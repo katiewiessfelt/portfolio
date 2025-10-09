@@ -59,7 +59,28 @@
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 575px) {
+  #home #accent-border {
+    position: relative;
+    padding: 2rem;
+    background: none; /* inner bg */
+  }
+  #home #accent-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 10px; /* border thickness */
+    background: linear-gradient(to right, var(--magenta), var(--yellow)) top, linear-gradient(to bottom, var(--yellow), var(--green)) right, linear-gradient(to left, var(--green), var(--blue)) bottom, linear-gradient(to top, var(--blue), var(--magenta)) left;
+    background-size: 100% 10px, 0px 100%, 100% 10px, 0px 100%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    -webkit-mask: linear-gradient(var(--white) 0 0) content-box, linear-gradient(var(--white) 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
   #home #accent-border {
     position: relative;
     padding: 2rem;

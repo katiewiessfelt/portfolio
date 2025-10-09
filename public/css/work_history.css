@@ -146,7 +146,7 @@
 }
 @media (max-width: 600px) {
   #work-history .left::after {
-    left: 15px;
+    left: -10px;
   }
 }
 #work-history .right {
@@ -161,7 +161,7 @@
 }
 @media (max-width: 600px) {
   #work-history .right {
-    left: 0%;
+    left: 1px;
   }
 }
 #work-history .right {
@@ -194,9 +194,13 @@
     border-color: transparent white transparent transparent;
   }
 }
-#work-history .right {
-  /* Fix the circle for containers on the right side */
+
+@media (max-width: 600px) {
+  #work-history .right::before {
+    left: 60px!important;
+  }
 }
+
 #work-history .right::after {
   left: -13px;
 }
