@@ -1,17 +1,23 @@
-<div id="footer" class="row">
-    <div class="d-flex flex-column text-center py-4">
-        <p class="h3">Katie Wiessfelt</p>
-        <p class="h4">Web Developer</p>
-        <p class="h4"><a href="mailto: wiessfeltk90@gmail.com">wiessfeltk89@gmail.com</a></p>
-    </div>
+<div id="footer" class="row d-flex justify-content-center p-4">
+  <div id="icons" class="col-6 d-flex justify-content-around">
+    <a href="https://github.com/katiewiessfelt"><i class="fa-brands fa-github" style="color: black"></i></a>
+    <a href="https://www.linkedin.com/in/katie-wiessfelt-0141538a/"><i class="fa-brands fa-square-linkedin" style="color: #0866C2"></i></a>
+    <a href="mailto: wiessfeltk89@gmail.com"><i class="fa-solid fa-envelope" style="color: white"></i></a>
+  </div>
 </div>
 
 <style>
+  #footer {
+    margin-top: 1em;
+    background: rgba(255, 0, 245, .25);
+    border-top: 2px solid var(--magenta);
+  }
 
-#footer {
-  margin-top: 1em;
-  background: rgba(255, 0, 245, .25);
-  border-top: 2px solid var(--magenta);
-}
+  #footer #icons i {
+    font-size: 3em;
+  }
 
+  #footer #icons i:hover {
+    cursor: pointer;
+  }
 </style>
