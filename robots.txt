@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://your-app.onrender.com/sitemap.xml

@@ -16,6 +16,11 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
+app.get('/robots.txt', (req, res) => {
+  res.type('text/plain');
+  res.send(`User-agent: *\nAllow: /\nSitemap: https://katiewiessfelt.onrender.com/sitemap.xml`);
+});
+
 let sitemapCache = null;
 let sitemapCacheTime = 0; // Timestamp of last generation
 const CACHE_DURATION = 1000 * 60 * 60 * 12; // 12 hours
