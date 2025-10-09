@@ -26,18 +26,18 @@ let sitemapCacheTime = 0; // Timestamp of last generation
 const CACHE_DURATION = 1000 * 60 * 60 * 12; // 12 hours
 
 app.get('/sitemap.xml', async (req, res) => {
+  res.header('Content-Type', 'application/xml');
+  res.header('Content-Encoding', 'gzip');
+  res.header('Cache-Control', 'public, max-age=43200'); // 12 hours
+
   // Serve from cache if still valid
   if (sitemapCache && Date.now() - sitemapCacheTime < CACHE_DURATION) {
     console.log('Serving sitemap from cache');
-    res.header('Content-Type', 'application/xml');
-    res.header('Content-Encoding', 'gzip');
     return res.send(sitemapCache);
   }
 
   try {
     console.log('Generating new sitemap...');
-    res.header('Content-Type', 'application/xml');
-    res.header('Content-Encoding', 'gzip');
 
     const sitemapStream = new SitemapStream({ hostname: 'https://katiewiessfelt.onrender.com' });
     const gzipStream = sitemapStream.pipe(createGzip());
