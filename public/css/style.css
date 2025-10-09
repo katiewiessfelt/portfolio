@@ -12,12 +12,14 @@
 
 html {
   display: flex;
+  width: 100%;
 }
 
 body {
   font-family: "Inter", sans-serif;
   background: var(--black);
   color: white;
+  width: 100%;
 }
 
 .main {
