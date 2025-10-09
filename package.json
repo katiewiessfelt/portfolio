@@ -15,7 +15,8 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "sitemap": "^8.0.0"
   },
   "description": "",
   "devDependencies": {
