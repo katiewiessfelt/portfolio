@@ -1,4 +1,4 @@
-  /* small screen */
+  /* small screen col-sm 575-640*/
   @media (max-width: 640px) {
   }
   /* medium screen */
