@@ -1,4 +1,13 @@
 #work-history {
+    #download-btn {
+        background: rgba(255, 0, 245, 0.25);
+        border: 1px solid var(--magenta);
+        color: var(--white);
+        &:hover {
+            background: rgba(255, 0, 245, 0.50);
+        }
+    }
+
     #title {
         > h4 {
             text-transform: uppercase;

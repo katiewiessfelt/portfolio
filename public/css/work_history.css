@@ -1,3 +1,11 @@
+#work-history #download-btn {
+  background: rgba(255, 0, 245, 0.25);
+  border: 1px solid var(--magenta);
+  color: var(--white);
+}
+#work-history #download-btn:hover {
+  background: rgba(255, 0, 245, 0.5);
+}
 #work-history #title > h4 {
   text-transform: uppercase;
 }
@@ -146,7 +154,7 @@
 }
 @media (max-width: 600px) {
   #work-history .left::after {
-    left: -10px;
+    left: 15px;
   }
 }
 #work-history .right {
@@ -161,7 +169,7 @@
 }
 @media (max-width: 600px) {
   #work-history .right {
-    left: 1px;
+    left: 0%;
   }
 }
 #work-history .right {
@@ -194,13 +202,9 @@
     border-color: transparent white transparent transparent;
   }
 }
-
-@media (max-width: 600px) {
-  #work-history .right::before {
-    left: 60px!important;
-  }
+#work-history .right {
+  /* Fix the circle for containers on the right side */
 }
-
 #work-history .right::after {
   left: -13px;
 }
