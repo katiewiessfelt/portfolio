@@ -9,7 +9,17 @@
 #home .skill-box {
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+  #home .skill-box {
+    /* small screen */
+    padding: 3em 2em;
+  }
+  #home .skill-box:nth-child(2) {
+    border-top: 5px solid var(--cyan);
+    border-bottom: 5px solid var(--cyan);
+  }
+}
+@media (max-width: 768px) and (min-width: 500px) {
   #home .skill-box {
     /* small screen */
     padding: 5em 10em;

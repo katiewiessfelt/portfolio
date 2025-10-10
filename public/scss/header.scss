@@ -3,6 +3,38 @@
     background: rgba(255, 0, 245, 0.25);
     border-bottom: 2px solid var(--magenta);
 
+    #full-nav {
+        display: flex;
+        @media (max-width: 499px) {
+            display: none;
+        }
+    }
+
+    #mobile-nav {
+        @media (min-width: 500px) {
+            display: none;
+        }
+        @media (max-width: 500px) {
+            display: flex;
+            > i {
+                font-size: 3em;
+            }
+            .overlay {
+                position: absolute;
+                z-index: 1;
+                width: 100vw;
+                height: fit-content;
+                left: 0px;
+                top: 82px;
+                background: rgb(65, 9, 62);
+                a {
+                    color: white;
+                }
+                box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
     ul {
         list-style-type: none;
     }

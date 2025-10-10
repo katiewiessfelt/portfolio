@@ -1,5 +1,6 @@
 <div id="header" class="row">
-  <div class="d-flex flex-row justify-content-around my-3">
+  <!-- full nav -->
+  <div id="full-nav" class="flex-row justify-content-around my-3">
     <div class="btn-group">
       <button name="home" type="button" class="btn">
         HOME
@@ -17,20 +18,20 @@
         <li>
           <span class="dropdown-item category h4">Castle CMS</span>
           <ul>
-              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/553">SHA256</a></li>
-              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/554">Fix Celery</a></li>
-              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/572">Dynamic Form</a>
-              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/580">Open AI</a>
-              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/583">Fix Upload File
-                  Form</a>
-              <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/612">Query Listing</a>
-            </ul>
+            <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/553">SHA256</a></li>
+            <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/554">Fix Celery</a></li>
+            <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/572">Dynamic Form</a>
+            <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/580">Open AI</a>
+            <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/583">Fix Upload File
+                Form</a>
+            <li><a class="dropdown-item h6" href="https://github.com/castlecms/castle.cms/pull/612">Query Listing</a>
+          </ul>
         </li>
         <li>
           <span class="dropdown-item category h4">TIBI</span>
           <ul>
-              <li><a class="dropdown-item h6" href="/projects/TIBI">Wireframes</a></li>
-            </ul>
+            <li><a class="dropdown-item h6" href="/projects/TIBI">Wireframes</a></li>
+          </ul>
         </li>
         <li>
           <span class="dropdown-item category h4 text-uppercase">Personal Projects</span>
@@ -38,23 +39,24 @@
             <li>
               <span class="dropdown-item h5 sub-category">Bed and Biscuits</span>
               <ul>
-                  <li><a class="dropdown-item h6" href="/projects/bed-and-biscuits">Wireframes</a></li>
-                  <li><a class="dropdown-item h6" href="https://github.com/katiewiessfelt/bed-and-biscuits">Github</a></li>
-                  <li><a class="dropdown-item h6" href="https://katiewiessfelt.github.io/bed-and-biscuits/">Site</a>
+                <li><a class="dropdown-item h6" href="/projects/bed-and-biscuits">Wireframes</a></li>
+                <li><a class="dropdown-item h6" href="https://github.com/katiewiessfelt/bed-and-biscuits">Github</a>
+                </li>
+                <li><a class="dropdown-item h6" href="https://katiewiessfelt.github.io/bed-and-biscuits/">Site</a>
               </ul>
             </li>
             <li>
               <span class="dropdown-item h5 sub-category">Portfolio</span>
               <ul>
-                  <li><a class="dropdown-item h6" href="/projects/portfolio">Wireframes</a></li>
-                  <li><a class="dropdown-item h6" href="https://github.com/katiewiessfelt/portfolio">Github</a></li>
-                  <li><a class="dropdown-item h6" href="/">Site</a>
+                <li><a class="dropdown-item h6" href="/projects/portfolio">Wireframes</a></li>
+                <li><a class="dropdown-item h6" href="https://github.com/katiewiessfelt/portfolio">Github</a></li>
+                <li><a class="dropdown-item h6" href="/">Site</a>
               </ul>
             </li>
             <li>
               <span class="dropdown-item h5 sub-category">Kattis</span>
               <ul>
-                  <li><a class="dropdown-item h6" href="https://github.com/katiewiessfelt/kattis">Github</a></li>
+                <li><a class="dropdown-item h6" href="https://github.com/katiewiessfelt/kattis">Github</a></li>
               </ul>
             </li>
           </ul>
@@ -72,11 +74,80 @@
       </button>
     </div>
   </div>
+  <!-- mobile nav -->
+  <div id="mobile-nav" class="flex-row justify-content-end my-3">
+    <i class="fa-solid fa-bars"></i>
+    <div class="overlay d-none pt-3">
+      <div class="d-flex flex-column ps-3"><a class="h5" href="/">Home</a></div>
+      <hr />
+      <div class="d-flex flex-column ps-3"><a class="h5" href="/projects">Projects</a></div>
+      <hr />
+      <div class="d-flex flex-column ps-3">
+        <span class="h5 text-uppercase">Castle CMS</span>
+        <div class="h6 d-flex flex-column ps-3">
+          <a href="https://github.com/castlecms/castle.cms/pull/553">SHA256</a>
+          <a href="https://github.com/castlecms/castle.cms/pull/554">Fix Celery</a>
+          <a href="https://github.com/castlecms/castle.cms/pull/572">Dynamic Form</a>
+          <a href="https://github.com/castlecms/castle.cms/pull/580">Open AI</a>
+          <a href="https://github.com/castlecms/castle.cms/pull/583">Fix Upload File Form</a>
+          <a href="https://github.com/castlecms/castle.cms/pull/612">Query Listing</a>
+        </div>
+      </div>
+      <hr />
+      <div class="d-flex flex-column ps-3">
+        <span class="h5 text-uppercase">TIBI</span>
+        <div class="d-flex flex-column ps-3 h6">
+          <a href="/projects/TIBI">Wireframes</a>
+        </div>
+      </div>
+      <hr />
+      <div class="d-flex flex-column ps-3">
+        <span class="h5 text-uppercase">Personal Projects</span>
+        <div class="d-flex flex-column ps-3">
+          <span class="h5">Bed and Biscuits</span>
+          <div class="h6 d-flex flex-column ps-3">
+            <a href="/projects/bed-and-biscuits">Wireframes</a>
+            <a href="https://github.com/katiewiessfelt/bed-and-biscuits">Github</a>
+            <a href="https://katiewiessfelt.github.io/bed-and-biscuits/">Site</a>
+          </div>
+        </div>
+        <div class="d-flex flex-column ps-3">
+          <span class="h5">Portfolio</span>
+          <div class="h6 d-flex flex-column ps-3">
+            <a href="/projects/portfolio">Wireframes</a>
+            <a href="https://github.com/katiewiessfelt/portfolio">Github</a>
+            <a href="/">Site</a>
+          </div>
+        </div>
+        <div class="d-flex flex-column ps-3">
+          <span class="h5">Kattis</span>
+          <div class="h6 d-flex flex-column ps-3">
+            <a href="https://github.com/katiewiessfelt/kattis">Github</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="d-flex flex-column ps-3"><a class="h5" href="/work-history">Work History</a></div>
+      <hr />
+      <div class="d-flex flex-column ps-3 pb-3"><a class="h5" href="/about">About</a></div>
+    </div>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script>
+  $(document).on('click', '.fa-solid.fa-bars', function () {
+    const mobilemenu = $('#mobile-nav').find('.overlay')
+    if (mobilemenu.hasClass('d-none')) {
+      mobilemenu.removeClass('d-none')
+      mobilemenu.addClass('d-block')
+    } else {
+      mobilemenu.removeClass('d-block')
+      mobilemenu.addClass('d-none')
+    }
+  })
+  
   $(document).on('click', 'button[name=home]', function () {
     window.location = '/'
   })
