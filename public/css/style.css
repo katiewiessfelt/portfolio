@@ -1,11 +1,11 @@
 :root {
   --orange: rgb(255, 119, 0);
-  --yellow: rgb(255, 255, 0);
-  --green: rgb(0, 255, 0);
-  --cyan: rgb(0, 255, 255);
-  --blue: rgb(0, 0, 255);
-  --magenta: rgb(255, 0, 255);
-  --purple: rgb(138, 43, 226);
+  --yellow: #ffff00;
+  --green: #00ff00;
+  --cyan: #00ffff;
+  --blue: #0000ff;
+  --magenta: #ff00ff;
+  --purple: #8a2be2;
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
 }
