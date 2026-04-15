@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head'); %>
+
+  <body>
+    <%- include('partials/header'); %>
+      <div class="wrapper">
+        <nav class="lil-nav">
+          <a href="#bnb-logo">
+            <img class="lil-nav__img"
+              src="/images/logos/bnb-logo.png"
+              alt="Bed and Biscuits Logo" />
+          </a>
+          <a href="#TIBI-logo">
+            <img class="lil-nav__img"
+              src="/images/logos/TIBI-logo.png"
+              alt="TIBI Logo" />
+          </a>
+          <a href="#katiewiessfelt-logo">
+            <img class="lil-nav__img"
+              src="/images/logos/katieWiessfelt.png"
+              alt="Katie Wiessfelt Logo" />
+          </a>
+        </nav>
+
+        <div class="gallery">
+          <a href="/projects/bed-and-biscuits">
+            <img class="gallery__img" id="bnb-logo"
+              src="/images/logos/bnb-logo.png"
+              alt="Bed and Biscuits Logo" />
+          </a>
+          <a href="/projects/TIBI">
+            <img class="gallery__img" id="TIBI-logo"
+              src="/images/logos/TIBI-logo.png"
+              alt="TIBI Logo" />
+          </a>
+          <a href="/projects/portfolio">
+            <img class="gallery__img" id="katiewiessfelt-logo"
+              src="/images/logos/katieWiessfelt.png"
+              alt="Katie Wiessfelt Logo" />
+          </a>
+        </div>
+      </div>
+
+      <%- include('partials/footer'); %>
+  </body>
+  <link rel="stylesheet" href="/css/experience.css">
+
+</html>
