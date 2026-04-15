@@ -3,6 +3,7 @@
   "homepage": "https://katiewiessfelt.github.io/portfolio",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node app.js",
     "sass": "sass --watch public/scss:public/css"
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@amcharts/amcharts5": "^5.17.1",
     "@fortawesome/fontawesome-free": "^7.0.1",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",

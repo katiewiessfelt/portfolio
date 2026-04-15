@@ -3,91 +3,107 @@
 
 <%- include('partials/head'); %>
 
-<body>
-  <%- include('partials/header'); %>
-    <div id="home">
-      <div class="row pt-4 pb-2 justify-content-center">
-        <div class="col-3 d-flex align-items-start">
-          <div class="d-flex justify-content-end">
-            <img class="h-auto w-50 header-accent" src="../images/accent-left.png" />
+  <body>
+    <%- include('partials/header'); %>
+      <div id="home">
+        <div class="row pt-4 pb-2 justify-content-center">
+          <div class="col-3 d-flex align-items-start">
+            <div class="d-flex justify-content-end">
+              <img class="h-auto w-50 header-accent" src="../images/accent-left.png" />
+            </div>
           </div>
-        </div>
-        <div id="accent-border" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5 mb-5">
-          <div class="text-center h1 align-self-end">Katie Wiessfelt</div>
-          <hr class="thick-hr" />
-          <div class="p-0 w-100 d-flex text-center justify-content-center h2">
-            Web Developer
+          <div id="accent-border" class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5 mb-5">
+            <div class="text-center h1 align-self-end">Katie Wiessfelt</div>
+            <hr class="thick-hr" />
+            <div class="p-0 w-100 d-flex text-center justify-content-center h2">
+              Web Developer
+            </div>
+            <hr class="thick-hr" />
           </div>
-          <hr class="thick-hr" />
-        </div>
-        <div class="col-3 d-flex align-items-end">
-          <div>
-            <img class="h-auto w-50 header-accent" src="../images/accent-right.png" />
-          </div>
-        </div>
-      </div>
-      <div id="main" class="row justify-content-center">
-        <div id="skills">
-          <div class="skill-box">
-            <img src="/images/fullstack.png" />
-            <h3>Full stack versatility, frontend finesse</h3>
-            <h4>Building performant, user-centered applications with JavaScript, React, Node.js, PHP, and SQL-based
-              backends.
-            </h4>
-          </div>
-          <div class="skill-box">
-            <img src="/images/collaboration.png" />
-            <h3>Collaborative and cross-functional</h3>
-            <h4>Experienced working with designers, PMs, and backend teams to ship production-ready features from
-              concept to
-              deployment.</h4>
-          </div>
-          <div class="skill-box">
-            <img src="/images/database.png" />
-            <h3>Database-driven development</h3>
-            <h4>Confident structuring relational databases, writing complex queries, and ensuring data integrity in live
-              applications.</h4>
-          </div>
-        </div>
-        <!-- desktop menu -->
-        <div id="actions" class="image-wrapper">
-          <img src="/images/actions-background.png" alt="background image" />
-          <div class="overlay">
+          <div class="col-3 d-flex align-items-end">
             <div>
-              <button type="button" class="btn btn-actions" data-src="/projects">
-                <h3>Portfolio</h3>
-              </button>
-              <button type="button" class="btn btn-actions" data-src="/work-history">
-                <h3>Experience</h3>
-              </button>
-              <button type="button" class="btn btn-actions" data-src="/about">
-                <h3>About</h3>
-              </button>
+              <img class="h-auto w-50 header-accent" src="../images/accent-right.png" />
             </div>
           </div>
         </div>
-        <!-- mobile menu -->
-        <div id="actions-mobile" class="flex-column align-items-center">
-          <button type="button" class="btn btn-actions" data-src="/projects">
-            <h3>Portfolio</h3>
-          </button>
-          <button type="button" class="btn btn-actions" data-src="/work-history">
-            <h3>Experience</h3>
-          </button>
-          <button type="button" class="btn btn-actions" data-src="/about">
-            <h3>About</h3>
-          </button>
+        <div id="main" class="row justify-content-center">
+          <div id="skills">
+            <div class="skill-box">
+              <img src="/images/fullstack.png" />
+              <h3>Full stack versatility, frontend finesse</h3>
+              <h4>Building performant, user-centered applications with JavaScript, React, Node.js, PHP, and SQL-based
+                backends.
+              </h4>
+            </div>
+            <div class="skill-box">
+              <img src="/images/collaboration.png" />
+              <h3>Collaborative and cross-functional</h3>
+              <h4>Experienced working with designers, PMs, and backend teams to ship production-ready features from
+                concept to
+                deployment.</h4>
+            </div>
+            <div class="skill-box">
+              <img src="/images/database.png" />
+              <h3>Database-driven development</h3>
+              <h4>Confident structuring relational databases, writing complex queries, and ensuring data integrity in
+                live
+                applications.</h4>
+            </div>
+          </div>
+          <!-- desktop menu -->
+          <div id="actions" class="image-wrapper">
+            <img src="/images/actions-background.png" alt="background image" />
+            <div class="overlay">
+              <div>
+                <button type="button" class="btn btn-actions" data-src="/projects">
+                  <h3>Portfolio</h3>
+                </button>
+                <button type="button" class="btn btn-actions" data-src="/work-history">
+                  <h3>Experience</h3>
+                </button>
+                <button type="button" class="btn btn-actions" data-src="/about">
+                  <h3>About</h3>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- mobile menu -->
+          <div id="actions-mobile" class="flex-column align-items-center">
+            <button type="button" class="btn btn-actions" data-src="/projects">
+              <h3>Portfolio</h3>
+            </button>
+            <button type="button" class="btn btn-actions" data-src="/work-history">
+              <h3>Experience</h3>
+            </button>
+            <button type="button" class="btn btn-actions" data-src="/about">
+              <h3>About</h3>
+            </button>
+          </div>
+        </div>
+
+        <!-- skills graph -->
+        <div id="chartdiv" style="width: 100%; height: 1400px;"></div>
+
+        <div id="sidebar" class="sidebar">
+          <div id="close-sidebar">X</div>
+          <div id="sidebar-content"></div>
         </div>
       </div>
-    </div>
-    <%- include('partials/footer'); %>
-      <script>
-        $('.btn-actions').on('click', function () {
-          window.location = $(this).data('src')
-        })
-      </script>
-</body>
 
-<link rel="stylesheet" href="/css/index.css" />
+
+      <%- include('partials/footer'); %>
+        <script src="/js/skills-graph.js"></script>
+        <script>
+          $('.btn-actions').on('click', function () {
+            window.location = $(this).data('src')
+          })
+
+          $('#close-sidebar').on('click', function () {
+            document.getElementById("sidebar").classList.remove("open");
+          })
+        </script>
+  </body>
+
+  <link rel="stylesheet" href="/css/index.css" />
 
 </html>
