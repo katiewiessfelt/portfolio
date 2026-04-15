@@ -414,7 +414,7 @@ router.get("/skills-graph", (req, res) => {
         ],
       },
       {
-        name: "Contianers",
+        name: "Containers",
         color: 0xff00ff, // pink
         children: [
           {
