@@ -143,7 +143,7 @@
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 19px;
     width: 0;
     z-index: 1;
     left: 30px;
@@ -154,7 +154,7 @@
 }
 @media (max-width: 600px) {
   #work-history .left::after {
-    left: 15px;
+    left: -8px;
   }
 }
 #work-history .right {
@@ -193,10 +193,10 @@
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 19px;
     width: 0;
     z-index: 1;
-    left: 30px;
+    left: 55px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
@@ -210,7 +210,7 @@
 }
 @media (max-width: 600px) {
   #work-history .right::after {
-    left: 15px;
+    left: 19px;
   }
 }
 #work-history .content {

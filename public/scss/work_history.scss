@@ -134,7 +134,7 @@
                 content: " ";
                 height: 0;
                 position: absolute;
-                top: 22px;
+                top: 19px;
                 width: 0;
                 z-index: 1;
                 left: 30px;
@@ -145,7 +145,7 @@
         }
         &::after {
             @media (max-width: 600px) {
-                left: 15px;
+                left: -8px;
             }
         }
     }
@@ -181,10 +181,10 @@
                 content: " ";
                 height: 0;
                 position: absolute;
-                top: 22px;
+                top: 19px;
                 width: 0;
                 z-index: 1;
-                left: 30px;
+                left: 55px;
                 border: medium solid white;
                 border-width: 10px 10px 10px 0;
                 border-color: transparent white transparent transparent;
@@ -195,7 +195,7 @@
             left: -13px;
 
             @media (max-width: 600px) {
-                left: 15px;
+                left: 19px;
             }
         }
     }

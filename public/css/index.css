@@ -194,5 +194,47 @@
   margin: 0;
   padding: 0.5em 1em;
 }
+#home > .sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px; /* hidden by default */
+  width: 350px;
+  height: 100%;
+  background: #151515;
+  box-shadow: -2px 0 10px rgba(255, 255, 255, 0.4);
+  border-left: 1px solid white;
+  transition: right 0.3s ease;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+#home > .sidebar.open {
+  right: 0;
+}
+#home > .sidebar a {
+  display: block;
+  margin: 8px 0;
+  color: var(--cyan);
+  text-decoration: underline;
+  cursor: pointer;
+}
+#home > .sidebar li {
+  font-size: 20px;
+}
+#home > .sidebar h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+#home > .sidebar h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#home #close-sidebar {
+  float: right;
+  margin-right: 1em;
+}
+#home #close-sidebar:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=index.css.map */
