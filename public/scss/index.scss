@@ -183,6 +183,18 @@
     }
   }
 
+  #chartdiv-mobile {
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+      width: 100%;
+      height: 500px;
+    }
+    @media (max-width: 1024px) and (min-width: 769px) {
+      display: none;
+    }
+  }
+
   > #main,
   > #main > div {
     padding-right: 0;
@@ -190,6 +202,14 @@
   }
 
   #actions {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  #chartdiv {
+    width: 100%;
+    height: 1400px;
     @media (max-width: 768px) {
       display: none;
     }
@@ -212,6 +232,7 @@
     padding: 0.5em 1em;
   }
 
+  // sidebar for skills graph info in desktop view
   > .sidebar {
     position: fixed;
     top: 0;
@@ -258,5 +279,39 @@
 
   #close-sidebar:hover {
     cursor: pointer;
+  }
+
+  // modal for skills graph info in mobile view
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    &:not(.hidden) {
+      opacity: 1;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .modal-content {
+    border: white solid 1px;
+    color: white;
+    box-shadow: -2px 0 10px rgba(255, 255, 255, 0.4);
+    background: #151515;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
   }
 }
