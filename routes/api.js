@@ -99,7 +99,7 @@ router.get("/skills-graph", (req, res) => {
             children: [
               {
                 name: "Express.js",
-                value: 4,
+                value: 7,
                 image: "/images/logos/express-js.png",
                 experience: [
                   { label: "Personal Project: Portfolio", link: "https://github.com/katiewiessfelt/portfolio" },
@@ -108,7 +108,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "Svelte",
-                value: 3,
+                value: 6,
                 image: "/images/logos/svelte.png",
                 experience: [
                   { label: "Personal Project: TIBI" }
@@ -116,7 +116,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "React",
-                value: 2,
+                value: 5,
                 image: "/images/logos/react-js.png",
                 experience: [
                   { label: "Personal Project: Bed and Biscuits", link: "https://github.com/katiewiessfelt/bed-and-biscuits" },
@@ -125,7 +125,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "Wordpress",
-                value: 2,
+                value: 5,
                 image: "/images/logos/wordpress.png",
                 experience: [
                   { label: "WIPPS", years: 1.5, link: "/work-history#wipps" },
@@ -134,7 +134,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "HTML",
-                value: 5,
+                value: 8,
                 image: "/images/logos/html.png",
                 experience: [
                   { label: "School, UW-Stevens Point", years: 1 },
@@ -153,7 +153,7 @@ router.get("/skills-graph", (req, res) => {
                 children: [
                   {
                     name: "jQuery",
-                    value: 5,
+                    value: 8,
                     image: "/images/logos/jquery.png",
                     experience: [
                       { label: "School, UW-Stevens Point", years: 1 },
@@ -170,7 +170,7 @@ router.get("/skills-graph", (req, res) => {
             children: [
               {
                 name: "XML",
-                value: 2,
+                value: 5,
                 image: "/images/logos/xml.png",
                 experience: [
                   { label: "Wildcard", years: 2, link: "/work-history#wildcard" }
@@ -178,7 +178,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "Python",
-                value: 5,
+                value: 8,
                 image: "/images/logos/python.png",
                 experience: [
                   { label: "Wildcard", years: 2.5, link: "/work-history#wildcard-intern" },
@@ -186,7 +186,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "PHP",
-                value: 4,
+                value: 7,
                 image: "/images/logos/php.png",
                 experience: [
                   { label: "School, UW-Stevens Point", years: .5 },
@@ -195,7 +195,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "Node.js",
-                value: 4,
+                value: 7,
                 image: "/images/logos/node-js.png",
                 experience: [
                   { label: "Personal Project: Portfolio", link: "https://github.com/katiewiessfelt/portfolio" },
@@ -204,7 +204,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "Java",
-                value: 1,
+                value: 4,
                 image: "/images/logos/java.png",
                 experience: [
                   { label: "School, UW-Stevens Point", years: 1 }
@@ -212,7 +212,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "Ruby",
-                value: 1,
+                value: 4,
                 image: "/images/logos/ruby.png",
               },
             ],
@@ -234,7 +234,7 @@ router.get("/skills-graph", (req, res) => {
             children: [
               {
                 name: "LESS",
-                value: 1,
+                value: 4,
                 image: "/images/logos/less.png",
                 experience: [
                   { label: "Wildcard", years: 2.5, link: "/work-history#wildcard-intern" }
@@ -242,7 +242,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "SASS",
-                value: 1,
+                value: 4,
                 image: "/images/logos/sass.png",
                 experience: [
                   { label: "Wildcard", years: 2.5, link: "/work-history#wildcard-intern" },
@@ -253,7 +253,7 @@ router.get("/skills-graph", (req, res) => {
           },
           {
             name: "Tailwind",
-            value: 1,
+            value: 4,
             image: "/images/logos/tailwind.png",
             experience: [
               { label: "Personal Project: TIBI" }
@@ -261,7 +261,7 @@ router.get("/skills-graph", (req, res) => {
           },
           {
             name: "Skeleton",
-            value: 1,
+            value: 4,
             image: "/images/logos/skeleton.png",
             experience: [
               { label: "Personal Project: TIBI" }
@@ -269,7 +269,7 @@ router.get("/skills-graph", (req, res) => {
           },
           {
             name: "Bootstrap",
-            value: 5,
+            value: 8,
             image: "/images/logos/bootstrap.png",
             experience: [
               { label: "School, UW-Stevens Point", years: 1 },
@@ -285,7 +285,7 @@ router.get("/skills-graph", (req, res) => {
         children: [
           {
             name: "AdobeXD",
-            value: 2,
+            value: 5,
             image: "/images/logos/adobe-xd.png",
             experience: [
               { label: "School, UW-Stevens Point", years: 1 }
@@ -293,7 +293,7 @@ router.get("/skills-graph", (req, res) => {
           },
           {
             name: "Figma",
-            value: 4,
+            value: 7,
             image: "/images/logos/figma.png",
             experience: [
               { label: "School, UW-Stevens Point", years: 1 },
@@ -309,7 +309,7 @@ router.get("/skills-graph", (req, res) => {
         children: [
           {
             name: "Cypress",
-            value: 1,
+            value: 4,
             image: "images/logos/cypress.png",
             experience: [
               { label: "Coursera: Cypress UI automation testing for absolute beginners" },
@@ -317,7 +317,7 @@ router.get("/skills-graph", (req, res) => {
           },
           {
             name: "UnitTest",
-            value: 5,
+            value: 8,
             image: "images/logos/unittest.png",
             experience: [
               { label: "Wildcard", years: 2.5, link: "/work-history#wildcard-intern" }
@@ -325,7 +325,7 @@ router.get("/skills-graph", (req, res) => {
           },
           {
             name: "Pytest",
-            value: 3,
+            value: 6,
             image: "images/logos/pytest.png",
             experience: [
               { label: "Wildcard", years: 1, link: "/work-history#wildcard-intern" }
@@ -333,7 +333,7 @@ router.get("/skills-graph", (req, res) => {
          },
           {
             name: "Selenium",
-            value: 3,
+            value: 6,
             image: "images/logos/selenium.png",
             experience: [
               { label: "Wildcard", years: 1, link: "/work-history#wildcard" }
@@ -341,7 +341,7 @@ router.get("/skills-graph", (req, res) => {
          },
           {
             name: "MinIO",
-            value: 3,
+            value: 6,
             image: "images/logos/MinIO.png",
             experience: [
               { label: "Wildcard", years: 1, link: "/work-history#wildcard" }
@@ -355,7 +355,7 @@ router.get("/skills-graph", (req, res) => {
         children: [
           {
             name: "Github",
-            value: 4,
+            value: 7,
             image: "images/logos/github.png",
             experience: [
               { label: "School, UW-Stevens Point", years: .5 },
@@ -365,7 +365,7 @@ router.get("/skills-graph", (req, res) => {
           },
           {
             name: "Nginx",
-            value: 1,
+            value: 4,
             image: "images/logos/nginx.png"
           },
           {
@@ -373,7 +373,7 @@ router.get("/skills-graph", (req, res) => {
             children: [
               {
                 name: "Redis",
-                value: 3,
+                value: 6,
                 image: "images/logos/redis.png",
                 experience: [
                   { label: "Wildcard", years: 1.5, link: "/work-history#wildcard" },
@@ -382,7 +382,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "CouchDB",
-                value: 4,
+                value: 7,
                 image: "/images/logos/couchdb.png",
                 experience: [
                   { label: "Wildcard", years: 1.5, link: "/work-history#wildcard" }
@@ -395,7 +395,7 @@ router.get("/skills-graph", (req, res) => {
             children: [
               {
                 name: "PostgreSQL",
-                value: 1,
+                value: 4,
                 image: "images/logos/postgresql.png",
                 experience: [
                   { label: "Wildcard", years: .5, link: "/work-history#wildcard-intern" }
@@ -403,7 +403,7 @@ router.get("/skills-graph", (req, res) => {
               },
               {
                 name: "MySQL",
-                value: 4,
+                value: 7,
                 image: "/images/logos/mysql.png",
                 experience: [
                   { label: "Nine by Six", years: 1.5, link: "/work-history#9x6" }
@@ -419,7 +419,7 @@ router.get("/skills-graph", (req, res) => {
         children: [
           {
             name: "Docker",
-            value: 4,
+            value: 7,
             image: "images/logos/docker.png",
             experience: [
               { label: "Wildcard", years: 2.5, link: "/work-history#wildcard-intern" },
@@ -428,7 +428,7 @@ router.get("/skills-graph", (req, res) => {
           },
           {
             name: "Podman",
-            value: 4,
+            value: 7,
             image: "images/logos/podman.png",
             experience: [
               { label: "Wildcard", years: 2.5, link: "/work-history#wildcard-intern" },

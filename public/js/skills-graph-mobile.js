@@ -3,6 +3,8 @@ am5.ready(function () {
   const root = am5.Root.new("chartdiv-mobile");
   root.setThemes([am5themes_Animated.new(root)]);
 
+  let activeNode = null;
+
   // Container
   const container = root.container.children.push(
     am5.Container.new(root, {
@@ -12,17 +14,14 @@ am5.ready(function () {
     }),
   );
 
-  // Treemap
-  const series = container.children.push(
-    am5hierarchy.Treemap.new(root, {
+  // Pack
+  var series = container.children.push(
+    am5hierarchy.Pack.new(root, {
       downDepth: 1,
-      upDepth: 0,
       initialDepth: 1,
       valueField: "value",
       categoryField: "name",
       childDataField: "children",
-      nodePaddingOuter: 20,
-      nodePaddingInner: 10,
       colors: am5.ColorSet.new(root, {
         colors: [
           am5.color(0x00ffff),
@@ -37,12 +36,20 @@ am5.ready(function () {
     }),
   );
 
+  container.children.unshift(
+    am5hierarchy.BreadcrumbBar.new(root, {
+      series: series,
+    }),
+  );
+
+  series.circles.template.setAll({
+    fillOpacity: 1,
+  });
   // -------------------------
   // BASIC STYLING
   // -------------------------
-
-  series.rectangles.template.setAll({
-    stroke: am5.color(0x000000),
+  series.circles.template.setAll({
+    stroke: am5.color(0x000000), // border color
     strokeWidth: 2,
     strokeOpacity: 1,
   });
@@ -63,44 +70,22 @@ am5.ready(function () {
   });
 
   // -------------------------
-  // LABEL VISIBILITY (selection)
-  // -------------------------
-  series.labels.template.setAll({
-    fill: am5.color(0x000000),
-  });
-
-  series.labels.template.adapters.add("visible", (visible, target) => {
-    const selected = series.get("selectedDataItem");
-    const di = target.dataItem;
-
-    if (!selected || !di) return visible;
-
-    return selected !== di;
-  });
-
-  // -------------------------
-  // SELECTION COLOR LOGIC
-  // -------------------------
-
-  series.events.on("selecteddatapointchanged", () => {
-    const selected = series.get("selectedDataItem");
-
-    series.dataItems.forEach((di) => {
-      const rect = di.get("rectangle");
-      if (!rect) return;
-
-      const isSelected = selected?.dataContext === di.dataContext;
-
-      rect.setAll({
-        fill: isSelected ? am5.color(0x000000) : di.get("fill"),
-        fillOpacity: isSelected ? 0.3 : 1,
-      });
-    });
-  });
-
-  // -------------------------
   // ICONS
   // -------------------------
+
+  series.circles.template.adapters.add("fill", (fill, target) => {
+  const di = target.dataItem;
+  if (!di) return fill;
+
+  const data = di.dataContext;
+
+  // if node has an icon → black background
+  if (data?.image) {
+    return am5.color(0x000000);
+  }
+
+  return fill;
+});
 
   series.nodes.template.setup = function (target) {
     target.events.on("dataitemchanged", function (ev) {
@@ -124,16 +109,12 @@ am5.ready(function () {
     });
   };
 
-  // -------------------------
-  // MODAL
-  // -------------------------
-
   series.nodes.template.events.on("click", (ev) => {
-    const data = ev.target.dataItem?.dataContext;
+    const di = ev.target.dataItem;
+    if (!di) return;
 
-    if (!data) return;
-
-    if (data.image) {
+    const data = di.dataContext;
+    if (data?.image && data?.experience) {
       openModal(data);
     }
   });
@@ -183,7 +164,7 @@ am5.ready(function () {
     tooltipText: "",
   });
 
-  series.rectangles.template.setAll({
+  series.circles.template.setAll({
     tooltip: null,
     tooltipText: "",
   });

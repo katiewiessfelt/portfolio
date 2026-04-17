@@ -253,8 +253,8 @@
   margin-top: 1em;
   margin-bottom: 1em;
 }
-#home #close-sidebar {
-  float: right;
+#home #close-sidebar, #home #modal-close {
+  text-align: right;
   margin-right: 1em;
 }
 #home #close-sidebar:hover {
@@ -289,6 +289,9 @@
   border-radius: 8px;
   max-width: 500px;
   width: 90%;
+}
+#home #modal-body {
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=index.css.map */

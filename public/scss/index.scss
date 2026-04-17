@@ -272,8 +272,8 @@
     }
   }
 
-  #close-sidebar {
-    float: right;
+  #close-sidebar, #modal-close {
+    text-align: right;
     margin-right: 1em;
   }
 
@@ -313,5 +313,9 @@
     border-radius: 8px;
     max-width: 500px;
     width: 90%;
+  }
+
+  #modal-body {
+    font-size: 1.5em;
   }
 }
