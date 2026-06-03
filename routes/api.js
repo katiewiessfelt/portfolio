@@ -98,9 +98,9 @@ router.get("/skills-graph", (req, res) => {
             name: "Frontend",
             children: [
               {
-                name: "Express.js",
+                name: "Node.js",
                 value: 7,
-                image: "/images/logos/express-js.png",
+                image: "/images/logos/node-js.png",
                 experience: [
                   { label: "Personal Project: Portfolio", link: "https://github.com/katiewiessfelt/portfolio" },
                   { label: "Nine by Six", years: 1, link: "/work-history#9x6" },
@@ -177,6 +177,15 @@ router.get("/skills-graph", (req, res) => {
                 ]
               },
               {
+                name: "Express.js",
+                value: 7,
+                image: "/images/logos/express-js.png",
+                experience: [
+                  { label: "Personal Project: Portfolio", link: "https://github.com/katiewiessfelt/portfolio" },
+                  { label: "Nine by Six", years: 1, link: "/work-history#9x6" },
+                ]
+              },
+              {
                 name: "Python",
                 value: 8,
                 image: "/images/logos/python.png",
@@ -191,15 +200,6 @@ router.get("/skills-graph", (req, res) => {
                 experience: [
                   { label: "School, UW-Stevens Point", years: .5 },
                   { label: "Nine by Six", years: 1.5, link: "/work-history#9x6" },
-                ]
-              },
-              {
-                name: "Node.js",
-                value: 7,
-                image: "/images/logos/node-js.png",
-                experience: [
-                  { label: "Personal Project: Portfolio", link: "https://github.com/katiewiessfelt/portfolio" },
-                  { label: "Nine by Six", years: 1, link: "/work-history#9x6" },
                 ]
               },
               {
